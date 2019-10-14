@@ -43,11 +43,6 @@ void setup() {
   }
   Serial.println("");
   Serial.println("Connection Successful");
-  Serial.print("IP address: ");
-  Serial.println(WiFi.localIP());           // Getting the IP address
-  Serial.println("Type the above IP address into browser search bar"); 
-  server.begin();      // Starting the server
-
     
 } 
 
