@@ -2,7 +2,7 @@
 
 const char* wifi_name = "saat"; // Your Wifi network name here
 const char* wifi_pass = "maximaxi";    // Your Wifi network password here
-WiFiServer server(80);    // Server will be at port 80
+
 
 #define timeSeconds 60
 const int relay_pin4 = 2;
@@ -70,7 +70,7 @@ void loop() {
   }
   delay(1000);
   now=millis();
-  // Turn off the LED after the number of seconds defined in the timeSeconds variable
+ 
     
   if(relay==false and ((now - lastTrigger) > (timeSeconds*1000))) 
   {
